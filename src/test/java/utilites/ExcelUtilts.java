@@ -48,10 +48,10 @@ public class ExcelUtilts {
 				if(i==0) {
 					row.createCell(i).setCellValue(testcaseName);				
 				}
-				else if(i>0 && i<8) {
+				else if(i>0 && i<9) {
 					row.createCell(i).setCellValue(a[i-1]);
-				}
-				else if (i==8) {
+				}				
+				else if (i==9) {
 					if(expResult==null) {
 						if(a[7].toLowerCase().contains("invalid")) {
 							row.createCell(i).setCellValue("Fail");
@@ -64,7 +64,7 @@ public class ExcelUtilts {
 					row.createCell(i).setCellValue(expResult);
 					
 				}
-				else if (i==9) {
+				else if (i==10) {
 					row.createCell(i).setCellValue(actResult);
 				}	
 				
