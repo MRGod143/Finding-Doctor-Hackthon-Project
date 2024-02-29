@@ -19,7 +19,7 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>Master.xml</suiteXmlFile>
 							<suiteXmlFile>Regression.xml</suiteXmlFile>
-							<suiteXmlFile>smoke.xml</suiteXmlFile>
+							<suiteXmlFile>smokeTest.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -111,13 +111,7 @@
 				<version>3.12.0</version>
 			</dependency>
 	 
-		
-	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
-	<dependency>
-	<groupId>tech.grasshopper</groupId>
-	<artifactId>extentreports-cucumber7-adapter</artifactId>
-	<version>1.14.0</version>
-	</dependency>
+
 	</dependencies>
 
 </project>
