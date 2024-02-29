@@ -23,3 +23,6 @@
 11:39:26.825 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
 11:39:26.829 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
 11:39:26.830 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+11:53:26.107 [main] INFO  factory.BaseClass - <-------------------Launching The Browser---------------->
+11:53:51.048 [main] INFO  pages.SetFormValue - <--------------------- Page object model --------------------->
+11:53:51.098 [main] INFO  pages.SetFormValue - <--------------------- Click the Form Button --------------------->

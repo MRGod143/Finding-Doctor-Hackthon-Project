@@ -74,7 +74,7 @@ public class ExcelUtilts {
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			XSSFRow row = sheet.getRow(rowNo);
 			int lastColNo = sheet.getRow(0).getPhysicalNumberOfCells();
-			System.out.println("Store data array size : " + a.length+"Exp & Act Result " + expResult + " " + actResult);
+			System.out.println("Store data array size : " + a.length+"\t Exp & Act Result " + expResult + " " + actResult);
 			for(int i=0; i<lastColNo; i++) {
 				if(i==0) {
 					row.createCell(i).setCellValue(testcaseName);				
@@ -84,7 +84,7 @@ public class ExcelUtilts {
 				}
 				else if (i==8) {
 					if(expResult==null) {
-						if(a[7].toLowerCase().contains("invalid")) {
+						if(a[7].contains("Invalid")) {
 							row.createCell(i).setCellValue("Fail");
 						}
 						else {
