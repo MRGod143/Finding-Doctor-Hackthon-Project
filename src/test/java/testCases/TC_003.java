@@ -44,16 +44,31 @@ public class TC_003 extends TestBaseClass{
 				form.setEmailId(email);
 				form.setOrgSize(orgsize);
 				form.setInterest(interest);				
-				form.clickSubmitBtn();
+				String status = form.clickSubmitBtn();
 				refreshPage();
 				
 				System.out.println("\n------------------------------Finish-------------------------\n");
 				if(typeofData.contains("Invalid")) {
-					expResult = "Fail";
-				}else {
+					System.out.println("inValid input ");
 					expResult = "Pass";
+					if(status.contains("Disabled")) {
+						actResult = "Pass";
+					}
+					else {
+						actResult = "Fail";
+					}
+				}else if(typeofData.contains("Valid")) {
+					System.out.println("Valid input ");
+					expResult = "Pass";
+					if(status.toLowerCase().contains("thank")) {
+						actResult = "Pass";
+					}
+					else {
+						actResult = "Fail";
+					}
+						
 				}
-				actResult = "Pass";
+				
 			}
 			catch(Exception e) {				
 				System.out.println(e);
@@ -66,6 +81,9 @@ public class TC_003 extends TestBaseClass{
 			rowNo++;
 		}
 		
+		
 	}
-
 }
+
+	
+	

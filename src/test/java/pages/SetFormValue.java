@@ -84,27 +84,36 @@ public class SetFormValue extends BasePage{
 	}
 	
 
-	public void clickSubmitBtn() {
+	public String clickSubmitBtn() {
+		String status = "";
 		try {
 			log.info("<--------------------- Setup the Click Button --------------------->");
 			boolean btnState = submitBtn.isEnabled();
 		
 			if(btnState) {
 				submitBtn.click();			
-				getStatus();
+				getStatus();		
+			}else {
+				System.out.println("\n --------------- Button is Disabled --------------- \n");
+				System.out.println("Enter Valid Data then button will Enabled for Submit the Form");
+				status = "Button is Disabled";		
 			}
-			
+			if(getStatus().toLowerCase().contains("thank")) {			
+				status =getStatus();				
+			}
+			return status;
 		}
 		catch(Exception e) {
-			System.out.println("\n --------------- Button is Disabled --------------- \n");
-			System.out.println("Enter Valid Data then button will Enabled for Submit the Form");
-			throw e;
+			return "Disabled";
 		}
+		
+		
 	}
 	
-	public void getStatus() {
+	public String getStatus() {
 		log.info("<--------------------- Setup the Get Status --------------------->");
-		System.out.println("\n --------------- Submitted Successfully --------------- \n");
+		System.out.println("\n\t --------------- Submitted Successfully --------------- \n");
 		System.out.println("Successfull Booking : "+thankyouText.getText());
+		return thankyouText.getText();
 	}
 }

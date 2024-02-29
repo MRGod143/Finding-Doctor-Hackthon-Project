@@ -48,14 +48,28 @@ public class FormFill {
     		form.setEmailId(emailId);
     		form.setOrgSize(orgSize);
 			form.setInterest(interest);
-			form.clickSubmitBtn();
+			String status =form.clickSubmitBtn();
 			if(typeOfData.contains("Invalid")) {
-				expResult = "Fail";
-			}else {
+				System.out.println("inValid input ");
 				expResult = "Pass";
+				if(status.contains("Disabled")) {
+					actResult = "Pass";
+				}
+				else {
+					actResult = "Fail";
+				}
+			}else if(typeOfData.contains("Valid")) {				
+				expResult = "Pass";
+				if(status.toLowerCase().contains("thank")) {
+					actResult = "Pass";
+				}
+				else {
+					actResult = "Fail";
+				}
+					
 			}
-			actResult = "Pass";
-    	}
+			
+		}
     	catch(Exception e)
 		{
 			actResult ="Fail";
@@ -70,7 +84,7 @@ public class FormFill {
 		
 		 
 		int rowNo = Integer.parseInt(no);		
-		String[] tempData = {userName,orgName,phoneNo,emailId,orgSize,interest};
+		String[] tempData = {userName,orgName,phoneNo,emailId,orgSize,interest,typeOfData};
 		ExcelUtilts.writeResult("Cumber Results.xlsx","Form Filling(Cucumber)", ("Form Filling Test Case :" +  rowNo), tempData, expResult, actResult, rowNo);
 			
 	}

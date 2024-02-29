@@ -120,7 +120,7 @@ public class ExcelUtilts {
 		if(sheetName == "Doctor") {
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			XSSFRow row ;
-			for(int i =1; i<=list.size(); i++) {
+			for(int i =1; i<=list.size(); i++) {			
 				row = sheet.createRow(i);
 				String tempDataArr[] = list.get(i-1).getText().split("\n");
 				int colNo=tempDataArr.length;

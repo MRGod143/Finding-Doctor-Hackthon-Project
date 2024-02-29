@@ -39,6 +39,7 @@ public class GetDoctorDetails extends BasePage{
 			}
 		}
 		
+		
 		System.out.println("\n --------------- Doctors List --------------- \n");
 		if(topDoctors.size()!=0) {
 			ExcelUtilts.wirteData("Doctor", topDoctors, 0);

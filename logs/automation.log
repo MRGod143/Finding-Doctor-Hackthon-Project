@@ -1,28 +1,42 @@
-11:39:24.313 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-11:39:24.355 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
-11:39:24.356 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-11:39:24.362 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-11:39:24.391 [main] INFO  pages.SetFormValue - <--------------------- Setup the Name --------------------->
-11:39:24.638 [main] INFO  pages.SetFormValue - <--------------------- Setup the Organization Name --------------------->
-11:39:24.856 [main] INFO  pages.SetFormValue - <--------------------- Setup the Phone Number --------------------->
-11:39:25.113 [main] INFO  pages.SetFormValue - <--------------------- Setup the Email ID --------------------->
-11:39:25.462 [main] INFO  pages.SetFormValue - <--------------------- Setup the Organization Size --------------------->
-11:39:26.712 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-11:39:26.714 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-11:39:26.715 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-11:39:26.744 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-11:39:26.803 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-11:39:26.808 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-11:39:26.812 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-11:39:26.814 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-11:39:26.819 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/calcChain.xml'
-11:39:26.820 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
-11:39:26.821 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-11:39:26.822 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-11:39:26.823 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
-11:39:26.825 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-11:39:26.829 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-11:39:26.830 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
-11:53:26.107 [main] INFO  factory.BaseClass - <-------------------Launching The Browser---------------->
-11:53:51.048 [main] INFO  pages.SetFormValue - <--------------------- Page object model --------------------->
-11:53:51.098 [main] INFO  pages.SetFormValue - <--------------------- Click the Form Button --------------------->
+15:09:08.981 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/tables/table2.xml'
+15:09:08.996 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+15:09:08.997 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+15:09:09.001 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+15:09:09.004 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+15:09:09.009 [main] INFO  pages.TopSurgery - <--------------------- Display all Top surgeries --------------------->
+15:09:15.397 [main] INFO  factory.BaseClass - <-------------------Launching The Browser---------------->
+15:09:29.070 [main] INFO  pages.SetFormValue - <--------------------- Page object model --------------------->
+15:09:29.073 [main] INFO  pages.SetFormValue - <--------------------- Click the Form Button --------------------->
+15:09:36.923 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:09:36.925 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+15:09:36.927 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+15:09:36.930 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:09:36.955 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+15:09:36.956 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:09:36.964 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:09:36.997 [main] INFO  pages.SetFormValue - <--------------------- Setup the Name --------------------->
+15:09:37.279 [main] INFO  pages.SetFormValue - <--------------------- Setup the Organization Name --------------------->
+15:09:37.455 [main] INFO  pages.SetFormValue - <--------------------- Setup the Phone Number --------------------->
+15:09:37.612 [main] INFO  pages.SetFormValue - <--------------------- Setup the Email ID --------------------->
+15:09:37.819 [main] INFO  pages.SetFormValue - <--------------------- Setup the Organization Size --------------------->
+15:09:38.288 [main] INFO  pages.SetFormValue - <--------------------- Setup the Interest --------------------->
+15:09:38.696 [main] INFO  pages.SetFormValue - <--------------------- Setup the Click Button --------------------->
+15:09:38.912 [main] INFO  pages.SetFormValue - <--------------------- Setup the Get Status --------------------->
+15:09:50.545 [main] INFO  pages.SetFormValue - <--------------------- Setup the Get Status --------------------->
+15:09:50.629 [main] INFO  pages.SetFormValue - <--------------------- Setup the Get Status --------------------->
+15:09:53.090 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:09:53.091 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+15:09:53.092 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:09:53.132 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:09:53.257 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+15:09:53.260 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+15:09:53.263 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+15:09:53.263 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+15:09:53.266 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/calcChain.xml'
+15:09:53.267 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+15:09:53.268 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+15:09:53.268 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+15:09:53.270 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+15:09:53.271 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+15:09:53.276 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+15:09:53.276 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
