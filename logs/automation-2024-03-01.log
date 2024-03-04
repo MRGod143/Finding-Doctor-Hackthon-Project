@@ -1,0 +1,40 @@
+14:43:38.009 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+14:43:38.015 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:43:38.029 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:43:38.055 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+14:43:38.057 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+14:43:38.066 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+14:43:38.067 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+14:43:38.069 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/calcChain.xml'
+14:43:38.069 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+14:43:38.069 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+14:43:38.069 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+14:43:38.070 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+14:43:38.070 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+14:43:38.072 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+14:43:38.073 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+14:43:59.764 [main] INFO  pages.FindingDoctors - <--------------------- Page object model --------------------->
+14:43:59.765 [main] INFO  pages.SetFilters - <--------------------- Page object model --------------------->
+14:43:59.766 [main] INFO  pages.GetDoctorDetails - <--------------------- Page object model --------------------->
+14:43:59.771 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:43:59.772 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:43:59.772 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+14:43:59.773 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:43:59.784 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+14:43:59.784 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:43:59.786 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:43:59.798 [main] INFO  pages.FindingDoctors - <--------------------- Enter a Location --------------------->
+14:44:02.201 [main] INFO  pages.FindingDoctors - <--------------------- Finding the Doctor Specialist --------------------->
+14:44:08.793 [main] INFO  pages.FindingDoctors - <--------------------- Verify the location --------------------->
+14:44:09.860 [main] INFO  pages.FindingDoctors - <--------------------- Enter a Location --------------------->
+14:44:15.689 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:44:15.690 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:44:15.690 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+14:44:15.691 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:44:15.700 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+14:44:15.700 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:44:15.702 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:44:15.711 [main] INFO  pages.SetFilters - <--------------------- Apply filter Button --------------------->
+14:44:21.260 [main] INFO  pages.SetFilters - <--------------------- Apply Experience Filter --------------------->
+14:44:24.623 [main] INFO  pages.SetFilters - <--------------------- Apply Fee Filter --------------------->
+14:44:26.629 [main] INFO  pages.SetFilters - <--------------------- Click all Filter button --------------------->
