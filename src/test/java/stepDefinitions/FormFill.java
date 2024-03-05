@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import factory.BaseClass;
@@ -14,6 +16,7 @@ import utilites.ExcelUtilts;
 
 public class FormFill {
 	WebDriver driver = BaseClass.getDriver();
+	Logger log= LogManager.getLogger(this.getClass());
 	SetFormValue form = new SetFormValue(driver);
 	
 	String userName, orgName,phoneNo, emailId, orgSize, typeOfData,interest,expResult;	
@@ -29,6 +32,7 @@ public class FormFill {
 	
 	@When("Enter all details {string}")
 	public void enter_all_data_into_form(String indexVal) throws IOException {
+		log.info("<--------------------- Enter all Form Required details --------------------->");
 		datamap = DataProvide.readData("Form Input Data");
     	
     	int index=Integer.parseInt(indexVal)-1;
@@ -80,7 +84,7 @@ public class FormFill {
 	
 	@Then("update the status in Excel data {string}")
 	public void status_update_excel( String no) throws IOException {
-		
+		log.info("<--------------------- Update the status in Excel data --------------------->");
 		 
 		int rowNo = Integer.parseInt(no);		
 		String[] tempData = {userName,orgName,phoneNo,emailId,orgSize,interest,typeOfData};

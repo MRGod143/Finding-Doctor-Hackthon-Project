@@ -19,6 +19,7 @@ public class FindingDoctor {
 	
     @When("user enters location as {string}")    
 	public void user_enters_location_as(String location) throws InterruptedException {  
+    	
     	BaseClass.getLogger().info("User Enters location ");
      	fd.locationFun(location);     	
     }

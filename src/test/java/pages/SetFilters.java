@@ -35,7 +35,7 @@ public class SetFilters extends BasePage{
 		log.info("<--------------------- Apply filter Button --------------------->");
 		Thread.sleep(1000);
 		storiesBtn.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		WebElement d = driver.findElement(By.xpath("//li[@aria-label='"+ story +"']"));
 		d.click();
 		
@@ -46,7 +46,7 @@ public class SetFilters extends BasePage{
 	
 	public void experienceFilter(String exp) throws InterruptedException {
 		log.info("<--------------------- Apply Experience Filter --------------------->");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		expBtn.click();
 		WebElement d = driver.findElement(By.xpath("//li[@aria-label='"+ exp +"']"));
 		d.click();
@@ -58,9 +58,9 @@ public class SetFilters extends BasePage{
 	
 	public void feeFilter(String fee) throws InterruptedException {	
 		log.info("<--------------------- Apply Fee Filter --------------------->");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickAllFilter();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		WebElement t =driver.findElement(By.xpath("//span[contains(@data-qa-id,'"+fee+"')]"));
 		t.click();
 		System.out.println("\n Fees Filter " + t.getText() + " Clicked " );
@@ -71,10 +71,9 @@ public class SetFilters extends BasePage{
 	public void availablityFilter(String availablity) throws InterruptedException {
 		
 		log.info("<--------------------- Apply the availablity --------------------->");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			clickAllFilter();
-			Thread.sleep(2000);
-//			WebElement t = driver.findElement(By.xpath("//span[contains(@data-qa-id,'"+availablity+"')]/preceding-sibling::input"));
+			Thread.sleep(500);
 			WebElement t = driver.findElement(By.xpath("//span[contains(@data-qa-id,'"+availablity+"')]"));
 			t.click();
 			

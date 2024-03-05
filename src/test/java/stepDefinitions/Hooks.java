@@ -1,15 +1,13 @@
 package stepDefinitions;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Properties;
 
+import java.io.IOException;
+import java.util.Properties;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import factory.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -23,12 +21,14 @@ public class Hooks {
 	
 	 WebDriver driver;
 	 Properties p;
+	 Logger log= LogManager.getLogger(this.getClass());
 	 public boolean previousScenarioPassed = true;
      
 	@Before
     public void setup() throws IOException, InterruptedException
     {
     	driver=BaseClass.initilizeBrowser();
+    	log.info("<--------------------- setup --------------------->");
     	    	
     	p=BaseClass.getProperties();
     	Thread.sleep(3000);
@@ -40,6 +40,7 @@ public class Hooks {
 	
 	@After 
 	public void afterScenario(Scenario s) {
+		log.info("<--------------------- After Every Scenario --------------------->");
 		if(s.isFailed()) {
 			previousScenarioPassed = false;
 		}
@@ -49,39 +50,29 @@ public class Hooks {
     
     @After
     public void tearDown(Scenario scenario) {
+    	log.info("<--------------------- Driver Close --------------------->");
         		
        driver.quit();
        
-    }
-    
-    //@AfterStep
-    public void captureScreen(String name, String folderName) 
-	{
-		String timeStamp = new SimpleDateFormat("yyyy-MM-dd.hh.mm.ss").format(new Date());
-		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\"+ folderName+ "\\"+ name + "_" + timeStamp + ".png";
-		File targetFile=new File(targetFilePath);
-		sourceFile.renameTo(targetFile);
-//		return targetFilePath;
-	}
+    }    
+   
     @AfterStep
     public void addScreenshot(Scenario scenario) {
         
     	// this is for cucumber junit report
-        if(scenario.isFailed()) {
-        	
+        if(scenario.isFailed()) {									// failure scenario 
+        	log.info("<--------------------- Create Failure report & Takes Screenshot  --------------------->");
         	TakesScreenshot ts=(TakesScreenshot) driver;
         	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
         	scenario.attach(screenshot, "image/png",scenario.getName());
-        	//captureScreen(scenario.getName(),"failure");
+        	
         	            
         }
-        else {
+        else {														// Success scenario 
+        	log.info("<--------------------- Create Success report & Takes Screenshot  --------------------->");
         	TakesScreenshot ts=(TakesScreenshot) driver;
         	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
-        	scenario.attach(screenshot, "image/png",scenario.getName());
-        	//captureScreen(scenario.getName(),"success");
+        	scenario.attach(screenshot, "image/png",scenario.getName());       
         	
         }
       

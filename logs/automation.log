@@ -1,13 +1,30 @@
-18:11:31.324 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-18:11:31.330 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-18:11:31.358 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-18:11:31.359 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-18:11:31.361 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-18:11:31.361 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-18:11:31.369 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/calcChain.xml'
-18:11:31.370 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-18:11:31.370 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-18:11:31.371 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
-18:11:31.372 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-18:11:31.374 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-18:11:31.374 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+15:42:56.212 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:42:56.237 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+15:42:56.269 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+15:42:56.271 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+15:42:56.273 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+15:42:56.274 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+15:42:56.280 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/calcChain.xml'
+15:42:56.280 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+15:42:56.281 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+15:42:56.281 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+15:42:56.282 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+15:42:56.283 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+15:42:56.285 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+15:42:56.286 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+15:46:44.566 [main] INFO  factory.BaseClass - <-------------------Launching The Browser---------------->
+15:46:55.640 [main] INFO  pages.TopSurgery - <--------------------- Create Elements : Page object model --------------------->
+15:46:55.704 [main] INFO  pages.TopSurgery - <--------------------- Click Surgery  --------------------->
+15:46:57.780 [main] INFO  pages.TopSurgery - <--------------------- Display all Top surgeries --------------------->
+15:47:13.553 [main] INFO  factory.BaseClass - <-------------------Launching The Browser---------------->
+15:48:09.197 [main] INFO  pages.FindingDoctors - <--------------------- Create Elements : Page object model --------------------->
+15:48:34.782 [main] INFO  pages.TopSurgery - <--------------------- Create Elements : Page object model --------------------->
+15:48:34.784 [main] INFO  pages.TopSurgery - <--------------------- Click Surgery  --------------------->
+15:48:36.714 [main] INFO  pages.TopSurgery - <--------------------- Display all Top surgeries --------------------->
+15:48:56.272 [main] INFO  factory.BaseClass - <-------------------Launching The Browser---------------->
+15:49:08.745 [main] INFO  pages.FindingDoctors - <--------------------- Create Elements : Page object model --------------------->
+15:49:16.491 [main] INFO  pages.TopSurgery - <--------------------- Create Elements : Page object model --------------------->
+15:49:16.492 [main] INFO  pages.TopSurgery - <--------------------- Click Surgery  --------------------->
+15:49:18.393 [main] INFO  pages.TopSurgery - <--------------------- Display all Top surgeries --------------------->
+15:49:20.696 [main] INFO  pages.SetFormValue - <--------------------- Create Elements : Page object model --------------------->
+15:49:20.698 [main] INFO  pages.SetFormValue - <--------------------- Click the Form Button --------------------->

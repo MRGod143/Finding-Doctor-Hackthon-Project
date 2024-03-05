@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
-
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
@@ -30,7 +30,7 @@ public class TestBaseClass {
 	
 	public static WebDriver driver;	
 	public Properties p;
-	Logger log ;
+	public Logger log= LogManager.getLogger(this.getClass());
 	@BeforeClass
 //	@Parameters({"os","browser"})
 	public void setup() throws IOException  {

@@ -42,7 +42,7 @@ public class TopSurgery extends BasePage{
 		log.info("<--------------------- Display all Top surgeries --------------------->");
 		System.out.println("\n --------------- Top Surgery --------------- \n");
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		for(WebElement s : listItems) {
 			System.out.println("\n\t"+s.getText());
 		}

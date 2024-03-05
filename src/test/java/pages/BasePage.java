@@ -12,7 +12,7 @@ public class BasePage {
 	//Setup Page Factory
 	public BasePage(WebDriver driver)
 	{
-		log.info("<--------------------- Page object model --------------------->");
+		log.info("<--------------------- Create Elements : Page object model --------------------->");
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}

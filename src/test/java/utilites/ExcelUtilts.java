@@ -52,15 +52,9 @@ public class ExcelUtilts {
 					row.createCell(i).setCellValue(a[i-1]);
 				}				
 				else if (i==9) {
-					if(expResult==null) {
-						if(a[8].toLowerCase().contains("invalid")) {
-							row.createCell(i).setCellValue("Fail");
-						}
-						else {
-							row.createCell(i).setCellValue("Pass");
-						}
+					
 						
-					}
+				
 					row.createCell(i).setCellValue(expResult);
 					
 				}

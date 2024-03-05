@@ -2,17 +2,14 @@ package pages;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-//import org.testng.Assert;
+
 
 public class FindingDoctors extends BasePage {
 	
 	
-	Logger log= LogManager.getLogger(this.getClass());
 	
 	public FindingDoctors(WebDriver driver) {
 		super(driver);
@@ -28,41 +25,39 @@ public class FindingDoctors extends BasePage {
 	List<WebElement> sugeestList;
 	
 	
-	public void locationFun(String loc) throws InterruptedException {
-		log.info("<--------------------- Enter a Location --------------------->");
-		Thread.sleep(1000);
+	public void locationFun(String loc) {
 		location.clear();
-		Thread.sleep(1000);
-		location.sendKeys(loc);			
+		location.sendKeys(loc);	
+		
 	}
 	
 	
 	public void verifyLocation(String loc) throws InterruptedException {
-		log.info("<--------------------- Verify the location --------------------->");
 		Thread.sleep(1000);
-		if(location.getAttribute("value").equalsIgnoreCase(loc)) {
-			System.out.println("\n Location "+location.getAttribute("value")+" verified");
+			
+		if(location.getAttribute("value").contains(loc)) {
+			System.out.println("\n ---------------------Verification------------------ \n");
+			System.out.println(" Location "+location.getAttribute("value")+" verified");
 			System.out.println("--------------------------------------------");
 		}		
 		else {
 			locationFun(loc);
 			Thread.sleep(1000);
 			for(WebElement e : sugeestList) {
-				Thread.sleep(2000);
-				if(e.getText().equalsIgnoreCase(loc)||e.getText().contains(loc)) {			
+				Thread.sleep(1000);
+				if(e.getText().equals(loc)) {			
 					e.click();
 					break;
 				}			
 				else {
 					break;
 				}
-			}			
+			}		
 		}
 	}
 	
 	
 	public void findDoc(String spl) {
-		log.info("<--------------------- Finding the Doctor Specialist --------------------->");
 		searchbar.clear();
 		searchbar.sendKeys(spl);		
 	}
@@ -72,15 +67,10 @@ public class FindingDoctors extends BasePage {
 		Thread.sleep(1000);
 		for(WebElement e : sugeestList) {
 			Thread.sleep(2000);
-			if(e.getText().contains(spl)||e.getText().equalsIgnoreCase(spl)) {			
+			if(e.getText().contains(spl)) {			
 				e.click();
 				break;
 			}
-		}
-			
-		
+		}		
 	}
-	
-	
-
 }
