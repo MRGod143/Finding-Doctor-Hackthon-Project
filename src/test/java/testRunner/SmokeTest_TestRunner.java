@@ -19,7 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 					dryRun = false,	 	// checks mapping between scenario steps and step definition methods
 					monochrome=true,	// to avoid junk characters in output
 					publish = true,	// to publish report in cucumber server
-					tags = "@Smoke"
+					tags = "@smoke"
 		)
 public class SmokeTest_TestRunner {
 

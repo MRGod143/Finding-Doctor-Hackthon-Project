@@ -109,7 +109,7 @@ public class FindingDoctorDDT {
     public void store_the_Result_Status_in_Excel(String no) throws IOException {
     	log.info("<--------------------- store the Result Status in Excel --------------------->");
     	int rowNo = Integer.parseInt(no);		
-		String[] tempData = {location, spl,story, experience, fee, availability,sort,expResult};
+		String[] tempData = {location, spl,story, experience, fee, availability,sort,expResult, typeOfData};
 		ExcelUtilts.writeResult("Cumber Results.xlsx","Finding Doctor (Cucumber)", ("Finding Doctor Test Case :" +  rowNo), tempData, expResult, actResult, rowNo);
     }
 }

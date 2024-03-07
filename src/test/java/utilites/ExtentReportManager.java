@@ -58,10 +58,11 @@ public class ExtentReportManager implements ITestListener {
 	//Success Method
 	public void onTestSuccess(ITestResult result) {
 	
-		test = extent.createTest(result.getMethod().getRealClass().getSimpleName());
+		test = extent.createTest(result.getMethod().getRealClass().getSimpleName()+ " -- "+result.getMethod().getMethodName().toUpperCase());
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report 
 		//+ " -- "+result.getMethod().getMethodName().toUpperCase()
 		test.log(Status.PASS,result.getName().toUpperCase() +" got successfully executed");
+		
 		try {
 			TestBaseClass bc = new TestBaseClass();
 			String imgPath = bc.captureScreen(result.getName()+" Test","Success");

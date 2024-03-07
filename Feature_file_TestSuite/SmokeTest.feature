@@ -1,6 +1,6 @@
 Feature: Smoke Test
   
-  @Smoke
+  @smoke
   Scenario: Smoke Test Checking basic funtionality Test
     When enters location as 
     And enters Doctor spl as    

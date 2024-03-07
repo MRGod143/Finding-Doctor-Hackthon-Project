@@ -37,7 +37,7 @@ public class TS_001 extends TestBaseClass{
 		availablity = tempData[5];
 		sort = tempData[6];
 		typeOfData = tempData[7];
-//		System.out.println("\n typeOfData : \t "+ typeOfData);
+
 		if(typeOfData.contains("Invalid")) {
 			expResult = "Fail";
 		}else {
@@ -51,6 +51,7 @@ public class TS_001 extends TestBaseClass{
 			fd = new FindingDoctors(driver);
 			sf = new SetFilters(driver);
 			doctorDetails = new GetDoctorDetails(driver);
+			
 			for(i=0;i<testCaseCount; i++) {
 				
 				try {

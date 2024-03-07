@@ -1,0 +1,40 @@
+17:24:15.591 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+17:24:15.600 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+17:24:15.602 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+17:24:15.603 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+17:24:15.605 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+17:24:15.605 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+17:24:15.606 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+17:24:15.606 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+17:24:15.607 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+17:24:15.610 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+17:24:15.610 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+17:24:15.614 [main] INFO  stepDefinitions.Hooks - <--------------------- Create Success report & Takes Screenshot  --------------------->
+17:24:15.937 [main] INFO  stepDefinitions.Hooks - <--------------------- After Every Scenario --------------------->
+17:24:15.938 [main] INFO  stepDefinitions.Hooks - <--------------------- Driver Close --------------------->
+17:24:22.572 [main] INFO  stepDefinitions.Hooks - <--------------------- setup --------------------->
+17:24:28.867 [main] INFO  pages.FindingDoctors - <--------------------- Create Elements : Page object model --------------------->
+17:24:28.868 [main] INFO  pages.SetFilters - <--------------------- Create Elements : Page object model --------------------->
+17:24:28.868 [main] INFO  pages.GetDoctorDetails - <--------------------- Create Elements : Page object model --------------------->
+17:24:28.869 [main] INFO  stepDefinitions.FindingDoctorDDT - <--------------------- enter a location and Doctor Speacialist --------------------->
+17:24:28.877 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:24:28.878 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:24:28.879 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+17:24:28.880 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:24:28.890 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+17:24:28.894 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+17:24:38.509 [main] INFO  stepDefinitions.Hooks - <--------------------- Create Success report & Takes Screenshot  --------------------->
+17:24:38.894 [main] INFO  stepDefinitions.FindingDoctorDDT - <--------------------- Enters all fliter will show result page --------------------->
+17:24:38.899 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:24:38.899 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:24:38.900 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+17:24:38.901 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:24:38.910 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+17:24:38.912 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+17:24:38.923 [main] INFO  pages.SetFilters - <--------------------- Apply filter Button --------------------->
+17:24:43.027 [main] INFO  pages.SetFilters - <--------------------- Apply Experience Filter --------------------->
+17:24:45.948 [main] INFO  pages.SetFilters - <--------------------- Apply Fee Filter --------------------->
+17:24:46.955 [main] INFO  pages.SetFilters - <--------------------- Click all Filter button --------------------->
+17:24:49.652 [main] INFO  pages.SetFilters - <--------------------- Apply the availablity --------------------->
+17:24:50.667 [main] INFO  pages.SetFilters - <--------------------- Click all Filter button --------------------->
+17:24:53.290 [main] INFO  pages.SetFilters - <--------------------- Apply Story filter --------------------->

@@ -6,30 +6,30 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.TC_001">
+      <class name="testCases.TS_001">
         <methods>
-          <include name="waitFun"/>
-          <include name="close"/>
-          <include name="setup"/>
           <include name="Finding_Doctor"/>
+          <include name="waitFun"/>
+          <include name="close"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_001 -->
-      <class name="testCases.TC_003">
+      </class> <!-- testCases.TS_001 -->
+      <class name="testCases.TS_003">
         <methods>
           <include name="waitFun"/>
+          <include name="close"/>
+          <include name="setup"/>
           <include name="Wellness_Form"/>
-          <include name="close"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_003 -->
-      <class name="testCases.TC_002">
+      </class> <!-- testCases.TS_003 -->
+      <class name="testCases.TS_002">
         <methods>
-          <include name="Top_Surgery"/>
           <include name="waitFun"/>
           <include name="close"/>
           <include name="setup"/>
+          <include name="Top_Surgery"/>
         </methods>
-      </class> <!-- testCases.TC_002 -->
+      </class> <!-- testCases.TS_002 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

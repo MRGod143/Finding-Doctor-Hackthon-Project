@@ -5,6 +5,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -43,6 +47,7 @@ public class ExcelUtilts {
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			XSSFRow row = sheet.getRow(rowNo);
 			int lastColNo = sheet.getRow(0).getPhysicalNumberOfCells();
+			CellStyle style = workbook.createCellStyle();  
 			for(int i =0; i<lastColNo; i++) {
 				
 				if(i==0) {
@@ -51,9 +56,7 @@ public class ExcelUtilts {
 				else if(i>0 && i<9) {
 					row.createCell(i).setCellValue(a[i-1]);
 				}				
-				else if (i==9) {
-					
-						
+				else if (i==9) {			
 				
 					row.createCell(i).setCellValue(expResult);
 					
@@ -61,6 +64,20 @@ public class ExcelUtilts {
 				else if (i==10) {
 					row.createCell(i).setCellValue(actResult);
 				}	
+				else if(i==11) {
+					Cell cell = row.createCell(i);
+					if(expResult==actResult) {
+						style.setFillBackgroundColor(IndexedColors.GREEN.getIndex());  
+			            style.setFillPattern(FillPatternType.BIG_SPOTS);  
+			            cell.setCellValue("Test Case Pass");
+					}
+					else if(expResult!=actResult){						
+							style.setFillBackgroundColor(IndexedColors.RED.getIndex());  
+				            style.setFillPattern(FillPatternType.BIG_SPOTS);  
+				            cell.setCellValue("Test Case Fail");					
+					}
+				}
+				
 				
 			}
 		}
@@ -68,6 +85,7 @@ public class ExcelUtilts {
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			XSSFRow row = sheet.getRow(rowNo);
 			int lastColNo = sheet.getRow(0).getPhysicalNumberOfCells();
+			CellStyle style = workbook.createCellStyle(); 
 
 			for(int i=0; i<lastColNo; i++) {
 				if(i==0) {
@@ -90,6 +108,21 @@ public class ExcelUtilts {
 				}
 				else if (i==9) {
 					row.createCell(i).setCellValue(actResult);
+				}
+				else if(i==10) {
+					Cell cell = row.createCell(i);
+					if(expResult==actResult) {
+						style.setFillBackgroundColor(IndexedColors.GREEN.getIndex());  
+			            style.setFillPattern(FillPatternType.BIG_SPOTS);  
+			            cell.setCellValue("Test Case Pass");
+					}
+					else if(expResult!=actResult){
+						
+							style.setFillBackgroundColor(IndexedColors.RED.getIndex());  
+				            style.setFillPattern(FillPatternType.BIG_SPOTS);  
+				            cell.setCellValue("Test Case Fail");
+						
+					}
 				}
 			}
 			
@@ -139,5 +172,5 @@ public class ExcelUtilts {
 		workbook.close();
 		file.close();
 		fo.close();
-	}    
+	}
 }
