@@ -1,0 +1,43 @@
+14:37:11.819 [main] INFO  factory.BaseClass - <-------------------story Filter---------------->
+14:37:11.825 [main] INFO  pages.SetFilters - <--------------------- Apply filter Button --------------------->
+14:37:37.513 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:37:37.514 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+14:37:37.516 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:37:37.536 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:37:37.565 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+14:37:37.568 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+14:37:37.570 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+14:37:37.570 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+14:37:37.573 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+14:37:37.574 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+14:37:37.574 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+14:37:37.576 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+14:37:37.576 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+14:37:37.579 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+14:37:37.581 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+14:37:37.586 [main] INFO  factory.BaseClass - <-------------------Test Scenario 001---------------->
+14:37:37.594 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:37:37.595 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:37:37.596 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+14:37:37.597 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:37:37.607 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:37:37.611 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+14:37:39.671 [main] INFO  factory.BaseClass - <-------------------finding Doctor---------------->
+14:37:46.826 [main] INFO  factory.BaseClass - <-------------------story Filter---------------->
+14:37:46.826 [main] INFO  pages.SetFilters - <--------------------- Apply filter Button --------------------->
+14:37:49.089 [main] INFO  factory.BaseClass - <-------------------experience Filter---------------->
+14:37:49.089 [main] INFO  pages.SetFilters - <--------------------- Apply Experience Filter --------------------->
+14:37:52.382 [main] INFO  factory.BaseClass - <-------------------Fee Filter---------------->
+14:37:52.383 [main] INFO  pages.SetFilters - <--------------------- Apply Fee Filter --------------------->
+14:37:53.389 [main] INFO  pages.SetFilters - <--------------------- Click all Filter button --------------------->
+14:37:56.721 [main] INFO  factory.BaseClass - <-------------------availablity Filter---------------->
+14:37:56.721 [main] INFO  pages.SetFilters - <--------------------- Apply the availablity --------------------->
+14:37:57.726 [main] INFO  pages.SetFilters - <--------------------- Click all Filter button --------------------->
+14:38:00.402 [main] INFO  factory.BaseClass - <-------------------Sort by Filter---------------->
+14:38:00.402 [main] INFO  pages.SetFilters - <--------------------- Apply Story filter --------------------->
+14:38:05.874 [main] INFO  factory.BaseClass - <-------------------Doctor Info---------------->
+14:38:05.910 [main] INFO  pages.GetDoctorDetails - <--------------------- All the doctor Details --------------------->
+14:38:06.989 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:38:06.990 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+14:38:06.991 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+14:38:06.993 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels

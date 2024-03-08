@@ -46,6 +46,7 @@ public class FindingDoctorDDT {
 			expResult = "Pass";
 		}
     	try {
+    		fd.clickFIndDoctor();
     		fd.locationFun(location);
     		fd.findDoc(spl);
     		fd.selectDoc(spl);

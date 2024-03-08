@@ -56,6 +56,7 @@ public class TS_001 extends TestBaseClass{
 				
 				try {
 					dataSetup();
+					clickFindDoctorBtn();
 					findingDoctor();
 					storyFilter();
 					experience();
@@ -87,7 +88,9 @@ public class TS_001 extends TestBaseClass{
 	}
 	
 	
-	
+	public void clickFindDoctorBtn() {
+		fd.clickFIndDoctor();
+	}
 	
 	public void findingDoctor() throws InterruptedException{	
 		log.info("<-------------------finding Doctor---------------->");

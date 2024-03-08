@@ -15,6 +15,10 @@ public class FindingDoctors extends BasePage {
 		super(driver);
 	}
 	
+
+	@FindBy(xpath="//div[@class='product-tab__title' and contains(text(),'Find Doctors')]") 
+	WebElement findDoctorBtn;
+	
 	@FindBy(xpath="//input[@placeholder='Search location']") 
 	WebElement location;
 	
@@ -24,6 +28,10 @@ public class FindingDoctors extends BasePage {
 	@FindBy(className="c-omni-suggestion-item__content__title") 
 	List<WebElement> sugeestList;
 	
+	
+	public void clickFIndDoctor() {
+		findDoctorBtn.click();
+	}
 	
 	public void locationFun(String loc) {
 		location.clear();

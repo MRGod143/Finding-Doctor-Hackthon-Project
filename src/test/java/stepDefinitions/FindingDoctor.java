@@ -21,6 +21,7 @@ public class FindingDoctor {
 	public void user_enters_location_as(String location) throws InterruptedException {  
     	
     	BaseClass.getLogger().info("User Enters location ");
+    	fd.clickFIndDoctor();
      	fd.locationFun(location);     	
     }
 	
